@@ -1,0 +1,7 @@
+.foot{
+    bottom:0;
+    position: fixed;
+    background-color: rgb(8, 82, 82);
+    text-align: center;
+    width:100%;
+}

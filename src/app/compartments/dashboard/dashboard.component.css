@@ -1,0 +1,36 @@
+.container{
+    background-color: aqua;
+}
+.form{
+    
+    height:200px;
+    width:300px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: floralwhite;
+}
+.form button{
+    height:35px;
+    width:70px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif ;
+}
+.card-body{
+    background-color: black;
+    color: aqua;
+    border-radius: 5px;
+}
+.row{
+    padding: 5em;
+}
+.heading{
+    text-align: center;
+    color:aqua;
+    background-color: black;
+}
+.form-container{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

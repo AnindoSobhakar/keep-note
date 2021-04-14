@@ -1,0 +1,36 @@
+{
+  "notes": [
+    {
+      "title": "meeting",
+      "description": "meeting @ 9:30am mrng",
+      "id": 1
+    },
+    {
+      "title": "meeting",
+      "description": "meeting @ 3pm evng",
+      "id": 2
+    },
+    {
+      "title": "tea",
+      "description": "koi to pila de",
+      "id": 3
+    },
+    {
+      "title": "sleep",
+      "description": "anytime ",
+      "id": 4
+    },
+    {
+      "title": "whsatever",
+      "description": "whenever",
+      "id": 6
+    }
+  ],
+  "trash": [
+    {
+      "title": "session",
+      "description": "meeting @ 3pm evng",
+      "id": 7
+    }
+  ]
+}

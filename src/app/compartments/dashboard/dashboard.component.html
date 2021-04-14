@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="form-container">
+    <div class="form">
+      <label for="title">Title</label>
+      <br/>
+      <input type="text" [(ngModel)]="title" name="title" placeholder="Title">
+      <br/>
+      <label for="description">Description</label>
+      <br/>
+      <input type="text" [(ngModel)]="description" name="title" placeholder="description">
+      <br/><br/>
+      <button class="btn btn-primary" (click)="add()" type="button">Save Note</button>
+      <button class="btn btn-primary" (click)="save()" type="button">Update Note</button>
+    </div>
+  </div>
+  <div class="heading">Notes</div>
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col" *ngFor="let i of noteItem" >
+          <div class="card" style="width: 18rem;">
+              <h3>{{i.title}}</h3>
+              <div class="card-body">
+                <p class="card-text">{{i.description}}</p>
+                <button (click)="addToTrash(i)">Trash</button>
+                <button (click)="editNote(i)" type="button">edit</button>
+              </div>
+          </div>
+      </div>  
+  </div>
+  <div class="heading">Trash</div>
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col" *ngFor="let t of trashItem" >
+          <div class="card" style="width: 18rem;">
+              <h3>{{t.title}}</h3>
+              <div class="card-body">
+                <p class="card-text">{{t.description}}</p>
+                <button (click)="removeTrash(t)">delete</button>
+                <button (click)="restoreTrash(t)">restore</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
